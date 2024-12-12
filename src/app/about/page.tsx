@@ -1,4 +1,4 @@
-export default function About() {
+ function About() {
     return (
       <section className="min-h-screen bg-cover bg-center relative py-16 px-8 sm:px-20"
         style={{ backgroundImage: 'url(/images/background.jpg)' }}
@@ -25,3 +25,4 @@ export default function About() {
     );
   }
   
+  export default About

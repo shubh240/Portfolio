@@ -12,10 +12,10 @@ export default function Home() {
       {/* Content */}
       <div className="text-center max-w-6xl mx-auto relative z-10 text-white">
         <h1 className="text-4xl sm:text-5xl font-bold mb-4">
-          Hi, I'm Shubham Varma
+          Hi, I&apos;m Shubham Varma
         </h1>
         <p className="text-xl mb-8">
-          I'm a passionate developer specializing in building modern web applications.
+          I&apos;m a passionate developer specializing in building modern web applications.
           I love creating seamless and intuitive user experiences with technologies like React, Node.js, and MongoDB.
         </p>
 

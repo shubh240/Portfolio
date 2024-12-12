@@ -22,7 +22,6 @@ export const getDataFromToken = (request: NextRequest): JwtPayload => {
         return decodedToken;
     } catch (error: any) {
         console.log(error, "Error getting in get data from token");
-
         throw new Error(error.message);
     }
 }

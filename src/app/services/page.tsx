@@ -18,7 +18,7 @@ export default function Services() {
             <div className="bg-gray-800 p-8 rounded-lg shadow-lg">
               <h3 className="text-2xl font-bold text-yellow-400 mb-4">Web Development</h3>
               <p className="text-lg text-gray-300 mb-4">
-                I offer custom web development services using modern frameworks like React.js, Next.js, and more. Whether it's a simple landing page or a full-fledged web app, I ensure seamless user experiences and responsive design.
+                I offer custom web development services using modern frameworks like React.js, Next.js, and more. Whether it&apos;s a simple landing page or a full-fledged web app, I ensure seamless user experiences and responsive design.
               </p>
               <ul className="text-gray-300 list-disc list-inside">
                 <li>Custom Websites</li>
@@ -44,7 +44,7 @@ export default function Services() {
             <div className="bg-gray-800 p-8 rounded-lg shadow-lg">
               <h3 className="text-2xl font-bold text-yellow-400 mb-4">Database Design & Optimization</h3>
               <p className="text-lg text-gray-300 mb-4">
-                I specialize in designing and optimizing databases, ensuring high performance, scalability, and data integrity. Whether it's MongoDB or PostgreSQL, I can create databases tailored to your application's needs.
+                I specialize in designing and optimizing databases, ensuring high performance, scalability, and data integrity. Whether it&apos;s MongoDB or PostgreSQL, I can create databases tailored to your application&apos;s needs.
               </p>
               <ul className="text-gray-300 list-disc list-inside">
                 <li>Database Architecture</li>
@@ -56,7 +56,7 @@ export default function Services() {
   
           {/* Call to Action */}
           <div className="mt-12">
-            <p className="text-lg text-gray-300 mb-4">Interested in working with me? Feel free to get in touch, and let's discuss how I can help you build your next project!</p>
+            <p className="text-lg text-gray-300 mb-4">Interested in working with me? Feel free to get in touch, and let&apos;s discuss how I can help you build your next project!</p>
             <Link href="/contact">
               <p className="bg-blue-600 text-white py-2 px-6 rounded hover:bg-blue-700">
                 Contact Me

@@ -1,23 +1,11 @@
 "use client"; // Ensure this page runs client-side
 
-import axios from "axios";
 import { useForm } from "react-hook-form";
 
 import { FaWhatsapp, FaEnvelope } from "react-icons/fa"; // Make sure you have react-icons installed
 
 export default function Contact() {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
 
-  // Submit handler for the form
-  // const onSubmit = async (data: any) => {
-  //   console.log(data);
-  //   const response = await axios.post('/api/users', data);
-  //   console.log(response, "response");
-  // };
 
   return (
     <section
@@ -53,102 +41,6 @@ export default function Contact() {
             <FaEnvelope className="mr-2 text-2xl" /> Send Email
           </a>
         </div>
-
-        {/* <form
-          onSubmit={handleSubmit(onSubmit)}
-          className="bg-gray-800 p-8 rounded-lg shadow-lg"
-        >
-          <div className="grid gap-6">
-            <div>
-              <label htmlFor="fullName" className="block text-lg text-gray-200 mb-2">
-                Full Name
-              </label>
-              <input
-                type="text"
-                id="fullName"
-                {...register("fullName", { required: "Full name is required" })}
-                className="w-full p-4 rounded-lg bg-gray-700 text-white"
-              />
-              {errors.fullName && (
-                <p className="text-red-500 text-sm mt-2">
-                  {typeof errors.fullName.message === "string" ? errors.fullName.message : "This field is required"}
-                </p>
-              )}
-            </div>
-
-            <div>
-              <label htmlFor="email" className="block text-lg text-gray-200 mb-2">
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                {...register("email", {
-                  required: "Email is required",
-                  pattern: {
-                    value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
-                    message: "Enter a valid email",
-                  },
-                })}
-                className="w-full p-4 rounded-lg bg-gray-700 text-white"
-              />
-              {errors.email && (
-                <p className="text-red-500 text-sm mt-2">
-                  {typeof errors.email.message === "string" ? errors.email.message : "Invalid email address"}
-                </p>
-              )}
-            </div>
-
-            <div>
-              <label htmlFor="mobile" className="block text-lg text-gray-200 mb-2">
-                Mobile Number
-              </label>
-              <input
-                type="text"
-                id="mobile"
-                {...register("mobile", {
-                  required: "Mobile number is required",
-                  pattern: {
-                    value: /^[0-9]{10}$/,
-                    message: "Enter a valid 10-digit mobile number",
-                  },
-                })}
-                className="w-full p-4 rounded-lg bg-gray-700 text-white"
-              />
-              {errors.mobile && (
-                <p className="text-red-500 text-sm mt-2">
-                  {typeof errors.mobile.message === "string" ? errors.mobile.message : "Enter a valid mobile number"}
-                </p>
-              )}
-            </div>
-
-            <div>
-              <label htmlFor="message" className="block text-lg text-gray-200 mb-2">
-                Message
-              </label>
-              <textarea
-                id="message"
-                {...register("message", { required: "Message is required" })}
-                className="w-full p-4 rounded-lg bg-gray-700 text-white"
-                rows={6}  // Corrected to number
-              />
-              {errors.message && (
-                <p className="text-red-500 text-sm mt-2">
-                  {typeof errors.message.message === "string" ? errors.message.message : "Message is required"}
-                </p>
-              )}
-            </div>
-
-            <div className="text-center mt-6">
-              <button
-                type="submit"
-                className="bg-blue-600 text-white py-2 px-6 rounded hover:bg-blue-700"
-              >
-                Send Message
-              </button>
-            </div>
-          </div>
-        </form> */}
       </div>
     </section>
   );
